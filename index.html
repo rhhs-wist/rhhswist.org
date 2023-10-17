@@ -1,0 +1,111 @@
+<!-- home page -->
+<!-- link to figma: https://www.figma.com/file/ZQKnYGLcGlozXU4oVYXhD2/rhhswist.org?node-id=0%3A1&t=e1nq56bwY0TId2rK-1 -->
+<!-- sophia -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RHHS WiST | Home</title>
+  <link href="homeStyle.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="top-btn.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<div class="navbar">
+  <div class="logo"><a href="#"><img id="headLogo" src="wistlogo.png"></a>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About Us</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <!--li><a href="/contact.html">Contact</a></li-->
+  </ul>
+</div>
+
+<body>
+  <div id="titleBanner">
+    <img src="../images/WIST_Banner.png" width=100%>
+  </div>
+  <br>
+  <div id="quote">
+    <a href="../blog/index.html" class="toBlogPage" onclick="">Check out our blog! &raquo;</a>
+  </div>
+  <div class="mission">
+    <div class="missionTxt">
+      <h2>Our Mission</h2>
+      <br>
+      <p>
+        WiST is a club dedicated to empowering girls through science and technology by exposing them to new
+        opportunities
+        in their STEM fields of interest through speaker events and activities.
+      </p>
+    </div>
+    <img src="blog/images/intelli2.jpeg" id="clubPhoto" alt="club image" width="300" height="300"
+      style="float: right; margin-left: 100px; border-radius: 5px;">
+  </div>
+  <!--a href="../blog/example.html"> <button id="latestPostBtn">Latest Blog Post</button></a-->
+  <br>
+  <div class="sponsors">
+    <h2>Sponsors</h2>
+    <br>
+    <a href="https://www.stickergiant.com/" target="_blank"><img src=../images/stickergiantlogo.png
+        alt="stickergiant logo" width="250px"></a>
+  </div>
+  <br><br>
+  <div class="footer-contents">
+    <div class="line">
+      <hr id="lineBreak">
+      </hr>
+    </div>
+    <br>
+    <!--div id="logo2"><a href="#"><img src="wistlogo.png"></a>
+    </div-->
+    <p id="footerNote">&copy;2023 River Hill Women in Science and Technology </p>
+  </div>
+  <div class="social-menu">
+    <ul>
+      <li>
+        <a href="https://www.instagram.com/rhhswist" target="blank" title="instagram"><i
+            class="fa fa-instagram fa-2x"></i></a>
+        <span id="spacing"></span>
+        <a href="https://github.com/rhhs-wist" target="blank" title="github"><i class="fa fa-github fa-2x"></i></a>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+  <button onclick="scrollToTop()" id="topBtn" title="Go to top">^</button>
+
+  <script>
+    //javascript for the button
+    //get button
+    let topButton = document.getElementById("topBtn");
+
+    //only show the button after the user has scrolled
+    window.onscroll = function () {appearOnScroll()};
+
+    function appearOnScroll() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    }
+
+    //scroll to the top when the user clicks the button
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

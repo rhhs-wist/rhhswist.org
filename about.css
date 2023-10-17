@@ -1,0 +1,55 @@
+.member {
+  box-sizing: border-box;
+  width: 148px;
+  height: 148px;
+  left: 681px;
+  top: 216px;
+  object-fit: cover;
+  
+  background: #D9D9D9;
+  /* Teal
+  
+  Icons, buttons, special elements
+  */
+  border: 3px solid #81B29A;
+  border-radius: 100%;
+  float: left;    
+  text-align: center;
+}
+h2 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #3D405B;
+  margin:0px;
+  padding:0px;
+}
+h3 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #81B29A;
+  margin:0px;
+  padding:0px;
+}
+p {
+  color: #3d405b;
+}
+
+.info {
+  padding-left: 20px;
+  display: grid;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding:20px;
+}
+
+.column {
+  display: block;
+  width: 50%;
+  align-items: left;
+  justify-content: center;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}

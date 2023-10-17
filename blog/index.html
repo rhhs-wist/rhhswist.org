@@ -1,0 +1,118 @@
+<!-- grace -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RHHS WiST | Blog</title>
+  <link rel="stylesheet" href="blogStyle.css">
+  <link rel="stylesheet" href="../top-btn.css">
+  <link rel="stylesheet" href="../footer.css">
+  <link rel="stylesheet" href="../header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/header.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<div class="navbar">
+  <div class="logo"><a href="#"><img src="/wistlogo.png"></a>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About Us</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <!--li><a href="/contact.html">Contact</a></li-->
+  </ul>
+</div>
+
+<body>
+  <h1>Blog</h1>
+  <h3>Read about what we're doing!</h3>
+
+  <div class="blogPost">
+    <a href="../blog/example.html">
+      <img src="images/disten.jpg" alt="Disten" width="300" style="float:left; margin-right: 15px; border-radius: 5px;">
+    </a>
+    <h5>May 17, 2023</h5>
+    <!--a href="../blog/example.html" class="blogTitle">Title</a-->
+    <p class="blogTitle">Charting Your Path After High School with Ms. Olivia Disten</p>
+    <p>Ms. Disten shared a valuable framework for decision-making after high school, discussing her personal experiences
+      working for government missions and cyber security companies and her non-linear career path. </p>
+  </div>
+
+  <div class="blogPost">
+    <!--a href="../blog/example.html"-->
+    <img src="images/intelli1.jpeg" alt="test image" width="300"
+      style="float:left; margin-right: 15px; border-radius: 5px;">
+    </a>
+    <h5>February 22, 2023</h5>
+    <p class="blogTitle">Speaker Panel with IntelliGenesis</p>
+    <p>Terra, Kelly, and Sara from IntelliGenesis, a Columbia-based cybersecurity company, shared their experiences
+      working in the field and working at a woman-owned company. They also discussed the scholarships offered to high
+      schoolers by IntelliGenesis. </p>
+  </div>
+  <div class="blogPost">
+    <img src="images/poker1.jpeg" alt="test image" width="300"
+      style="float:left; margin-right: 15px; border-radius: 5px;">
+    </a>
+    <h5>January 11, 2023</h5>
+    <p class="blogTitle">Poker</p>
+    <p>We learned and played poker, discussing its relationship to statistics, game theory, and machine learning as well
+      as its role in empowering women in the professional world.</p>
+    <!--a href="../blog/example.html" class="readMore">Read more &raquo;</a-->
+  </div>
+
+  <button onclick="scrollToTop()" id="topBtn" title="Go to top">^</button>
+  <br>
+  <div class="footer-contents">
+    <div class="line">
+      <hr id="lineBreak">
+      </hr>
+    </div>
+    <br>
+    <!--div id="logo2"><a href="#"><img src="wistlogo.png"></a>
+    </div-->
+    <p id="footerNote">&copy;2023 River Hill Women in Science and Technology </p>
+  </div>
+  <div class="social-menu">
+    <ul>
+      <li>
+        <a href="#" target="blank" title="instagram"><i class="fa fa-instagram fa-2x"></i></a>
+        <span id="spacing"></span>
+        <a href="#" target="blank" title="github"><i class="fa fa-github fa-2x"></i></a>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <script src="blogScript.js"></script>
+
+  <script>
+    //javascript for the button
+    //get button
+    let topButton = document.getElementById("topBtn");
+
+    //only show the button after the user has scrolled
+    window.onscroll = function () {appearOnScroll()};
+
+    function appearOnScroll() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    }
+
+    //scroll to the top when the user clicks the button
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

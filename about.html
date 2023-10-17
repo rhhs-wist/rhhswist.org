@@ -1,0 +1,154 @@
+<!-- about us/ members page -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> WIST </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="about.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="top-btn.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<div class="navbar">
+  <div class="logo"><a href="#"><img id="headLogo" src="wistlogo.png"></a>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About Us</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <!--li><a href="/contact.html">Contact</a></li-->
+  </ul>
+</div>
+<p>
+<h2>
+  <center>About Us</center>
+  <br>
+  <br>
+</h2>
+<div class="row">
+  <div class="column">
+    <img class="member" src="ximages/stephanie.jpeg">
+    <div class="info">
+      <h2> Stephanie Grippando </h2>
+      <h3> Co-founder and Co-president </h3>
+      <p>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <img class="member" src="">
+    <div class="info">
+      <h2> Shreeya Chand</h2>
+      <h3> Co-founder and Co-president </h3>
+      <p>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img class="member">
+    <div class="info">
+      <h2> Sophia Chudnovsky </h2>
+      <h3> Projects Coordinator </h3>
+      <p>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <img class="member">
+    <div class="info">
+      <h2> Stephanie Moses </h2>
+      <h3> Club Dev/Outreach Coordinator </h3>
+      <p>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img class="member">
+    <div class="info">
+      <h2> Katarina Thompson </h2>
+      <h3> Blogmaster </h3>
+      <p>
+      </p>
+    </div>
+  </div>
+  <div class="column">
+    <img class="member">
+    <div class="info">
+      <h2> Blen Mekonen </h2>
+      <h3> Community Service Coordinator </h3>
+      <p>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img class="member">
+    <div class="info">
+      <h2> Pooja Swamykumar </h2>
+      <h3> Social Media Coordinator </h3>
+      <p>
+      </p>
+    </div>
+  </div>
+</div>
+</p>
+
+<div class="footer-contents">
+  <div class="line">
+    <hr id="lineBreak">
+    </hr>
+  </div>
+  <br>
+  <!--div id="logo2"><a href="#"><img src="wistlogo.png"></a>
+</div-->
+  <p id="footerNote">&copy;2023 River Hill Women in Science and Technology </p>
+</div>
+<div class="social-menu">
+  <ul>
+    <li>
+      <a href="#" target="blank" title="instagram"><i class="fa fa-instagram fa-2x"></i></a>
+      <span id="spacing"></span>
+      <a href="#" target="blank" title="github"><i class="fa fa-github fa-2x"></i></a>
+    </li>
+  </ul>
+</div>
+</div>
+
+<button onclick="scrollToTop()" id="topBtn" title="Go to top">^</button>
+
+</html>
+
+<script>
+  //javascript for the button
+  //get button
+  let topButton = document.getElementById("topBtn");
+
+  //only show the button after the user has scrolled
+  window.onscroll = function () {appearOnScroll()};
+
+  function appearOnScroll() {
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+      topButton.style.display = "block";
+    } else {
+      topButton.style.display = "none";
+    }
+  }
+
+  //scroll to the top when the user clicks the button
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>

@@ -1,0 +1,142 @@
+#form * {
+  position: absolute;
+  border: none;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #3D405B;
+  opacity: 1;
+}
+
+/* text for all p & input elements */
+p, input, textarea {
+  /* text */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #3D405B;
+}
+
+/* styling for the contact title */
+#cuTitle {
+  /* placement & sizing */
+  width: 549px;
+  height: 69px;
+  left: 125px;
+  top: 140px;
+  
+  /* text */
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 69px;
+  text-align: center;
+  color: #3D405B;
+}
+
+/* styling for the info under the contact title */
+#cuInfo {
+  /* positioning  & sizing */
+  width: 285px;
+  height: 65px;
+  left: 273px;
+  top: 261px;
+
+  /* text */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+/* input section */
+/* first name input */
+#fNameInput {
+  /* positioning & box */
+  width: 160px;
+  height: 50px;
+  left: 767px;
+  top: 140px;
+  background: #D9D9D9;
+  backdrop-filter: blur(2px);
+  border-radius: 5px;
+}
+
+/* last name input */
+#lNameInput {
+  /* positioning & box */
+  width: 168px;
+  height: 50px;
+  left: 935px;
+  top: 140px;
+  background: #D9D9D9;
+  border-radius: 5px;
+}
+
+/* email input */
+#emailInput {
+  /* positioning & box */
+  width: 336px;
+  height: 50px;
+  left: 767px;
+  top: 196px;
+  background: #D9D9D9;
+  border-radius: 5px;
+}
+
+/* subject input */
+#subjectInput {
+  /* positioning & box */
+  width: 336px;
+  height: 50px;
+  left: 767px;
+  top: 252px;
+  background: #D9D9D9;
+  border-radius: 5px;
+}
+
+/* explanation input */
+#explanationInput {
+  /* positioning & box */
+  width: 336px;
+  height: 132px;
+  left: 767px;
+  top: 308px;
+  background: #D9D9D9;
+  border-radius: 5px;
+  resize: none;
+}
+
+/* submit button */
+#submitBtn {
+  /* positioning & box */
+  cursor: pointer;
+  width: 85px;
+  height: 38px;
+  left: 767px;
+  top: 449px;
+  background: #81B29A;
+  border-radius: 5px;
+  /* text */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3D405B;
+}

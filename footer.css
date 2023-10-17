@@ -1,0 +1,51 @@
+.footer-contents {
+  justify-content: center;
+}
+
+.social-menu{
+  margin: 0 auto;
+  width:70px;
+  height:70px;
+  text-align:left;
+  line-height: 20px;
+}
+.social-menu ul{
+  list-style:none;
+  width:120px;
+  margin: 0 auto;
+}
+.social-menu ul li a {
+  width:30px;
+  height:30px;
+  line-height:20px;
+  color:#3D405B;
+  margin: 0 auto;
+}
+#footerNote {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color:#3D405B;
+  display: flex;
+  justify-content: center;
+}
+.line {
+  display: flex;
+  justify-content: center;
+}
+.line hr {
+  width: 500px;
+  height: 0px;
+  border: 3px solid #3D405B;
+}
+
+#logo2 {
+  display: flex;
+  justify-content: center;
+}
+
+#logo2 img {
+  width:350px;
+}

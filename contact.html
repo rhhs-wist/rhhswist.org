@@ -1,0 +1,45 @@
+<!-- contact page -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> WIST </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="contact.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+</head>
+
+<div class="navbar">
+  <div class="logo"><a href="#"><img id="headLogo" src="wistlogo.png"></a>
+  </div>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about.html">About Us</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <!--li><a href="/contact.html">Contact</a></li-->
+  </ul>
+</div>
+
+<body>
+  <form id="form" method="post" action="contact.php">
+    <h1 id="cuTitle">Contact Us</h1>
+    <div id="cuInfo">Fill out this form to inquire about: membership, projects, or if you are interested in speaking for
+      or sponsoring us.</div>
+
+    <input name="name" type="text" id="fNameInput" placeholder=" First Name*">
+    <input type="text" id="lNameInput" placeholder=" Last Name">
+    <input name="email" type="text" id="emailInput" placeholder=" Email*">
+    <input name="subject" type="text" id="subjectInput" placeholder=" Subject*">
+    <textarea name="name" id="explanationInput" placeholder=" What can we help you with?*"></textarea>
+
+    <input id="submitBtn" type="submit">
+  </form>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
