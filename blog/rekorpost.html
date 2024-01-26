@@ -1,0 +1,65 @@
+<!-- grace -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RHHS WiST | Blog</title>
+  <link href="postStyle.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../top-btn.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+</head>
+
+<body>
+  <a href="index.html" class="backToBlogPage" onclick="">&#8249 back to blog page</a>
+  <br>
+  <h1>Speaker Panel with Rekor</h1>
+  <h3>Featuring Elham Rahmani, Deb Hennessy, Kristen Neiderer, and Laura Stokes</h3>
+  <img src="images/rekor2.jpeg" alt="test image" id="topImage" width=300">
+  <div class="entry">
+    <p>WiST and Girls Who Code teamed up to create an interesting speaker event with four women working at the company Rekor. Kristen Neiderer, Laura Stokes, Elham Rahmani, and Deb Hennessy are all a part of Rekor’s affinity group for women, EmpWR. EmpWR is one of the affinity groups at Rekor that focuses on getting women together to educate, network, and support each other. The group was started about a year ago and is focused on developing opportunities for women to thrive, grow, and be successful. About 75% of the company’s employees are men and the other 25% are women and this affinity group helps women connect with those who have common interests and shared experiences. Each of the women spoke about their path in their career, education, and life at the event and gave advice about any lessons they had learned throughout their life. They also opened up the talk for questions after they had each finished speaking about themselves and what they had learned.</p>
+    <p>A big part of the talk was about Rekor and their experiences there, so an introduction to Rekor is in order. Rekor is an international software development company that specializes in artificial intelligence, and has a building in Columbia, MD. Rekor started in 2017 as a startup and has been steadily growing over the years - now there are over 300 employees in the company. Most of the employees are software developers but there are also jobs in marketing, human resources, and business management among other things. Rekor focuses on selling into the business market with technology that works on improving transportation, traffic management, public safety, and law enforcement. For example, they are currently creating an AI that makes license plate recognition more efficient and that can find other information about the car like its speed, model and make, if the windshield wipers are on, and more. They also use AI to do traffic studies to learn more about traffic patterns, allowing them to advise on when to open or close roadways, how to time stop lights, and when and where to add infrastructure. Further information is available at www.rekor.ai if you want to learn more.</p>
+    <p>Each of the women who came to the event took turns speaking, and Ms. Rahmani started them off. Ms. Rahmani is currently a software engineer for Rekor with a focus on machine learning. She got her Bachelors in software engineering while also working as a programming teacher and recommended that teaching a subject to someone else is a good way of improving your own understanding of the topic. She worked for eight years after graduating and went from a junior software developer to a senior software engineer. After that she did her Masters in AI software while it was still in its early stages. She spoke of the many job opportunities in all branches of computer science, especially in the USA, and urged that anyone interested in computer science take full advantage of them. Her advice was to always stay curious, keep learning, and know that you can overcome any obstacle you come across.</p>
+    <p>Next up was Ms. Hennessy, who is the chief people officer for Rekor, or, in other words, the lead of global human resources. In this position she manages Rekor’s engineering, sales, marketing, legal, and IT departments. She started at Rekor 2 years ago when the company created her current job. She mentioned that Rekor is constantly growing as a company and opening up new positions that didn’t exist before. Ms. Hennessy spoke on the many opportunities that are opening up for women in STEM careers. Her advice was to stick to your STEM interests even if you are one of few women or maybe the only woman in your class. She also mentioned how the job market is constantly changing and expanding, with more than 1 million new jobs in STEM fields cropping up over the last year, so there are endless possibilities for career paths to pursue. Ms. Hennessy also provided us with some interesting statistics on women in the workforce. These statistics being that the total employment in the USA is 50% women, however when it comes to STEM jobs, women make up only 26-28%. There is also a large disparity when it comes to women being CEOs, with 53 women, or about 10%, being the CEOs of a top 500 Fortune company. The amount of women in STEM fields and taking leadership positions is continuing to increase slowly, and Ms. Hennessy’s overall message was to not let yourself feel discouraged in the face of adversity and to keep on going regardless of the obstacles in your path.</p>
+    <p>Ms. Neiderer, the director of marketing operations, spoke next. She started her undergrad as an education major with a focus on English, but moved on to business management and then eventually project management with a focus on automation. Over her career, she turned to finance and marketing. Most of the work she does in Rekor is with systems integrations, which includes inventory management and project management systems among others. An important part of her job is connecting these systems to find how they affect each other and make sure everyone in each department has access to the information and systems they need. Her advice was to make mistakes, learn from them, and think of them as another gained experience and move on. She spoke about the importance of building relationships with people and staying informed as making allies and being genuine can open up doors for you in the future. She herself was recruited to most of her jobs because she worked with one of the employees at one point and built credibility with.</p>
+    <p>The last speaker in the group, Ms. Stokes, has been working at Rekor as a payroll specialist for only about three months. She was recruited after working on a project with Rekor and this is her first tech style job, even though she mainly does the accounting and finance sides of things at Rekor. She had a leadership role at Hunter Douglas previously in her career and learned a lot from the many new responsibilities she had there at the time. Her advice was to stay confident and no matter what you’re doing, keep going and remember that you can do it.</p>
+    <p>WiST and Girls Who Code loved having Ms. Neiderer, Ms. Stokes, Ms. Rahmani, and Ms. Hennessy at River Hill to speak with everyone. One final note is that Rekor does not currently have any specific opportunities for high school students or women. They do have a few paid intern positions, but there is no formal internship program. Anybody who is interested should reach out to Rekor and ask about doing an internship with them. They also expressed that if anybody wants to visit Rekor, they can reach out and could get a tour of the lab. You can reach Deb Hennessy at dhennessy@rekor.ai.</p>
+    
+  </div>
+  <hr>
+  <div class="entryNavigation">
+    <a href="sharkpost.html" class="previousBlog" onclick="">&#8249 Previous</a>
+    <a href="rekorpost.html" class="nextBlog" onclick="">Next &#8250</a>
+  </div>
+  <button onclick="scrollToTop()" id="topBtn" title="Go to top">^</button>
+
+  <script src="postScript.js"></script>
+
+  <script>
+    //javascript for the button
+    //get button
+    let topButton = document.getElementById("topBtn");
+
+    //only show the button after the user has scrolled
+    window.onscroll = function () {appearOnScroll()};
+
+    function appearOnScroll() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    }
+
+    //scroll to the top when the user clicks the button
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+
+</html>

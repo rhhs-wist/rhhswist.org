@@ -61,6 +61,7 @@ p{
   text-decoration: none;
   font-size: 18px;
   float: right;
+  margin-right: 40px;
 }
 
 .nextBlog:hover{
@@ -76,4 +77,10 @@ hr{
   content: "";
   clear: both;
   display: table;
+}
+
+#topImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

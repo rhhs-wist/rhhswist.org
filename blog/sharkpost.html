@@ -1,0 +1,83 @@
+<!-- grace -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>RHHS WiST | Blog</title>
+  <link href="postStyle.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../top-btn.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+</head>
+
+<body>
+  <a href="index.html" class="backToBlogPage" onclick="">&#8249 back to blog page</a>
+  <br>
+  <h1>STEM "Shark Tank"</h1>
+  <h3>November 8, 2023</h3>
+  <img src="images/sharkph2.jpg" alt="test image" id="topImage" width=300">
+  <div class="entry">
+    <p>We did an activity in which teams came up with ideas for and then pitched a STEM innovation which would then be
+      judged and rated by the meeting attendees. The prompt for the activity was to decide on an environmental problem
+      and then devise a STEM solution for it. The teams had to work on building connections STEM ideas and creations
+      with sustainability. Each team had 10 minutes to research and prepare before getting 1 and a half minutes to
+      present. </p>
+    <p>The first team, Team Robo, presented an idea to help with combatting the harmful effects of pesticides on plants
+      and crops. Their idea was to create a nanorobot that could easily be spread over plants which would then repair
+      the plants that had been harmed by pesticides and prevent any future harm from pesticides affecting these plants.
+    </p>
+    <p>The second team, Team Pretty Princess, focused on addressing the large amounts of litter in the dead portions of
+      the ocean. They proposed a robot vacuum that would be dropped into dead areas and use AI to navigate to areas with
+      trash in them and suck in the trash. It would then filter out and purify the water and compress and store trash
+      which could then be picked up and properly disposed of.</p>
+    <p>The third team, Team SS, centered on the loss of biodiversity and the sustainability of habitats. They suggested
+      using genetic cloning to increase the populations of the animals that are currently endangered and nearing
+      extinction. They would also use genetic cloning to create new species that could survive in the changing
+      environments and take the place of species that had already been lost.</p>
+    <p>The fourth team, Team SE, concentrated on water pollution, which includes the chemicals, trash, and air pollution
+      that affect Earth’s bodies of water. Their proposal was to create a giant water filter that would filter out the
+      trash and bad chemicals in the water and properly dispose of them.</p>
+    <p>All of the teams were very creative with their solutions and had a fun time collaborating to create the best
+      pitch possible. Each of the pitches were very engaging and every speaker got the chance to improve their
+      presentational skills. All of the attendees rated each group’s pitches based on their creativity, delivery, and
+      adherence to the prompt on a google form, and those with the highest score won gift cards. The meeting was a cross
+      between STEM and the business and startup side of the world and the valuable skills that can be applied to both
+      fields. </p>
+  </div>
+  <hr>
+  <div class="entryNavigation">
+    <a href="sharkpost.html" class="previousBlog" onclick="">&#8249 Previous</a>
+    <a href="rekorpost.html" class="nextBlog" onclick="">Next &#8250</a>
+  </div>
+  <button onclick="scrollToTop()" id="topBtn" title="Go to top">^</button>
+
+  <script src="postScript.js"></script>
+
+  <script>
+    //javascript for the button
+    //get button
+    let topButton = document.getElementById("topBtn");
+
+    //only show the button after the user has scrolled
+    window.onscroll = function () {appearOnScroll()};
+
+    function appearOnScroll() {
+      if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+        topButton.style.display = "block";
+      } else {
+        topButton.style.display = "none";
+      }
+    }
+
+    //scroll to the top when the user clicks the button
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+</body>
+
+</html>

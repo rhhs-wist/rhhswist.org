@@ -71,3 +71,7 @@ a:hover{
 .imgBox img{ 
   max-width: 98%;
 }
+
+.postLink:hover {
+  color: #3d405b;
+}
